@@ -1,0 +1,308 @@
+/* Common styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease; /* Fade in animation for header */
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-end; /* Align search bar to the right */
+    margin-right: 20px; /* Add some margin from the right */
+    margin-bottom: 20px; /* Add some margin from the bottom */
+}
+
+.search-input {
+    padding: 8px 12px; /* Adjust padding for better appearance */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 20px; /* Round corners */
+    font-size: 14px; /* Adjust font size */
+    background-color: #fff; /* Light background color */
+    color: #333; /* Dark text color */
+    width: 250px; /* Adjust width */
+}
+
+.search-input::placeholder {
+    color: #999; /* Lighter placeholder text color */
+}
+
+.search-button {
+    padding: 8px 16px; /* Adjust padding for better appearance */
+    margin-left: 10px; /* Add margin between input and button */
+    border: none;
+    border-radius: 20px; /* Round corners */
+    background-color: #007bff; /* Blue button background */
+    color: #fff; /* White button text */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#commands-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.command {
+    margin-right: 10px; /* Adjust the spacing as needed */
+}
+
+.description {
+    margin-left: 10px; /* Adjust the spacing as needed */
+}
+
+li {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideInLeft 0.5s ease; /* Slide in animation for list items */
+}
+/* Dark Theme */
+.dark-theme {
+    background-color: #1f1f1f; /* Dark background color */
+    color: #ddd; /* Light text color */
+}
+
+.dark-theme h1 {
+    color: #4fc3f7; /* Light blue header color */
+}
+
+.dark-theme .search-input {
+    background-color: #333; /* Dark background for search input */
+    color: #ddd; /* Light text color */
+    border: 1px solid #ddd; /* Light border */
+}
+
+.dark-theme .search-input::placeholder {
+    color: #999; /* Lighter placeholder text color */
+}
+
+.dark-theme .search-button {
+    background-color: #4fc3f7; /* Light blue button background */
+    color: #fff; /* White button text */
+}
+
+.dark-theme button.copy-btn {
+    background-color: #4fc3f7; /* Light blue button background */
+    color: #fff; /* White button text */
+}
+
+.dark-theme button.copy-btn:hover {
+    background-color: #29b6f6; /* Darker blue on hover */
+}
+
+
+
+/* Dark Theme */
+.dark-theme li {
+    background-color: #333; /* Dark text color */
+    color: #fff; /* white text color */
+}
+/* Define hover animation */
+li:hover {
+    animation: slideInLeft 0.5s ease; /* Apply slide-in animation on hover */
+    transform: scale(1.02); /* Scale up the list item on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+button.copy-btn {
+    padding: 5px 10px;
+    background-color: #007bff; /* Blue button background */
+    color: #fff; /* White button text */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button.copy-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateX(-10px); /* Slide to the left on hover */
+}
+
+button.copy-btn:focus {
+    outline: none;
+}
+
+/* Additional animation on button click */
+button.copy-btn:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+
+
+/* Light Theme */
+.light-theme {
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333; /* Dark text color */
+}
+
+.light-theme li {
+    background-color: #f8f9fa; /* Light background */
+    color: #333; /* Dark text color */
+}
+
+
+.light-theme h1 {
+    color: #007bff; /* Blue header color */
+}
+
+.light-theme .search-input {
+    background-color: #fff; /* White background for search input */
+    color: #333; /* Dark text color */
+    border: 1px solid #ccc; /* Light border */
+}
+
+.light-theme .search-input::placeholder {
+    color: #999; /* Lighter placeholder text color */
+}
+
+.light-theme .search-button {
+    background-color: #007bff; /* Blue button background */
+    color: #fff; /* White button text */
+}
+
+.light-theme button.copy-btn {
+    background-color: #007bff; /* Blue button background */
+    color: #fff; /* White button text */
+}
+
+.light-theme button.copy-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+/* Theme switch box */
+.theme-switch-container {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+}
+
+.theme-switch {
+    display: none;
+}
+
+.theme-switch-label {
+    display: inline-block;
+    width: 60px; /* Increase width for a bigger button */
+    height: 30px; /* Increase height for a bigger button */
+    background-color: #ddd;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.theme-switch-label i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.theme-switch-label i:first-child {
+    left: 5px;
+}
+
+.theme-switch-label i:last-child {
+    right: 5px;
+    transform: translateY(-50%) scale(0);
+}
+
+.theme-switch:checked + .theme-switch-label {
+    background-color: #007bff; /* Blue background color */
+}
+
+.theme-switch:checked + .theme-switch-label i:first-child {
+    transform: translateY(-50%) scale(0);
+}
+
+.theme-switch:checked + .theme-switch-label i:last-child {
+    transform: translateY(-50%);
+}
+
+
+
+/* Media queries for mobile phones */
+@media only screen and (max-width: 600px) {
+    .search-container {
+        justify-content: center; /* Center align search bar */
+        margin-right: 0; /* Remove right margin */
+    }
+    .search-input {
+        width: 40%; /* Take full width */
+    }
+    /* Theme switch box */
+    .theme-switch-container {
+        position: absolute;
+        top: 80px;
+        right: 20px;
+}
+    
+}
+
+/* Media queries for tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+    .search-container {
+        justify-content: center; /* Center align search bar */
+        margin-right: 0; /* Remove right margin */
+    }
+    .search-input {
+        width: 40%; /* Take full width */
+    }
+}
+
+/* Media queries for TVs */
+@media only screen and (min-width: 1025px) {
+    .search-container {
+        justify-content: center; /* Center align search bar */
+        margin-right: 0; /* Remove right margin */
+    }
+    .search-input {
+        width: 40%; /* Take full width */
+    }
+}
+
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

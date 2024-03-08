@@ -1,0 +1,17 @@
+{
+    "!config": "Have the pc config",
+    "!streamraiders": "join the battle",
+    "!quote": "Have a quote",
+    "!rpc [choices]": "Play rock-paper-scissors",
+    "!coinflip": "play head tails",
+    "!youtube": "join the Youtube channel",
+    "!discord": "Join the discord channel",
+    "!help": "Show all the commands",
+    "!valosens": "get the valorant sens",
+    "!valores": "get the valorant resolution",
+    "!bot": "give the discord bot",
+    "!lurk": "Go in lurk mode",
+    "!fortune_cookie": "Get a Fortune Cookie",
+    "!motivation_quote": "Get a motivation quote",
+    "!test4": "test"
+}
