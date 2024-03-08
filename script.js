@@ -1,3 +1,4 @@
+
 // Fetch JSON data asynchronously
 fetch('commands.json')
   .then(response => response.json())
@@ -66,7 +67,5 @@ fetch('commands.json')
             sunIcon.style.display = 'inline';
         }
     });
-
-
 
 });
