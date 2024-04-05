@@ -5,7 +5,7 @@
     "!rpc [choices]": "Play rock-paper-scissors",
     "!coinflip": "play head tails",
     "!youtube": "join the Youtube channel",
-    "!Tiktok": "join the Tiktok channel",
+    "!tiktok": "join the Tiktok channel",
     "!discord": "Join the discord channel",
     "!help": "Show all the commands",
     "!about_me": "Show About Me",
